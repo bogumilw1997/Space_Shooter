@@ -17,11 +17,13 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.border.LineBorder;
 
+import Projekt.Przycisk;
+
 public class Interfejs extends JFrame {
 
-	JButton Graj;
-	JButton Ustawienia;
-	JButton Wyjdz;
+	Przycisk Graj;
+	Przycisk Ustawienia;
+	Przycisk Wyjdz;
 	JLabel tlo;
 	JLabel tytul;
 	
@@ -46,45 +48,17 @@ public class Interfejs extends JFrame {
 		c.gridy = 0;
 		tlo.add(tytul, c);
 	
-
-		Graj = new JButton("  Graj  ");
-		Graj.setFont(new Font("Monospaced", Font.BOLD, 60));
-        Graj.setBorder(new LineBorder(Color.black, 3, true));
-        Graj.setBackground(Color.yellow);
-        
-        Graj.addMouseListener(new MouseAdapter() {
-        	public void mouseEntered(MouseEvent e) {
-        		Graj.setBackground(Color.RED);
-        	}
-
-        	public void mouseExited(MouseEvent e) {
-        		Graj.setBackground(Color.YELLOW);
-        	}	
-        });
-        
+		Graj = new Przycisk("  Graj  ");
 		c.gridx = 1;
 		c.gridy = 1;
 		tlo.add(Graj, c);
 
-		Ustawienia = new JButton("  Ustawienia  ");
-		Ustawienia.setFont(new Font("Monospaced", Font.BOLD, 60));
-		Ustawienia.setBackground(Color.yellow);
-		Ustawienia.setBorder(new LineBorder(Color.black, 3, true));
-		Ustawienia.addMouseListener(new MouseAdapter() {
-			public void mouseEntered(MouseEvent e) {
-				Ustawienia.setBackground(Color.RED);
-			}
-
-			public void mouseExited(MouseEvent e) {
-				Ustawienia.setBackground(Color.YELLOW);
-			}	
-	    });
+		Ustawienia = new Przycisk("  Ustawienia  ");
 		c.gridx = 1;
 		c.gridy = 2;
 		tlo.add(Ustawienia, c);
 
-		Wyjdz = new JButton("  Wyjdü  ");
-		Wyjdz.setFont(new Font("Monospaced", Font.BOLD, 60));
+		Wyjdz = new Przycisk("  Wyjdü  ");
 		Wyjdz.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
@@ -93,17 +67,6 @@ public class Interfejs extends JFrame {
 			}
 		});
 		
-		Wyjdz.setBorder(new LineBorder(Color.black, 3, true));
-		Wyjdz.setBackground(Color.yellow);
-		Wyjdz.addMouseListener(new MouseAdapter() {
-			public void mouseEntered(MouseEvent e) {
-				Wyjdz.setBackground(Color.RED);
-			}
-			public void mouseExited(MouseEvent e) {
-				Wyjdz.setBackground(Color.YELLOW);
-			}
-		});
-
 		c.gridx = 1;
 		c.gridy = 3;
 		tlo.add(Wyjdz, c);
