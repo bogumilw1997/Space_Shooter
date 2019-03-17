@@ -62,7 +62,6 @@ public class Interfejs extends JFrame {
 		Wyjdz.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
-				// TODO Auto-generated method stub
 				System.exit(0);
 			}
 		});
