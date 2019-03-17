@@ -1,5 +1,6 @@
 package Projekt;
 
+import java.awt.Color;
 import java.awt.Font;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
@@ -19,7 +20,8 @@ public class Interfejs extends JFrame {
 	JButton Ustawienia;
 	JButton Wyjdz;
 	JLabel tlo;
-
+	JLabel tytul;
+	
 	public Interfejs() throws HeadlessException {
 
 		this.setSize(1920, 1080);
@@ -34,16 +36,23 @@ public class Interfejs extends JFrame {
 		this.add(tlo);
 		c.insets = new Insets(50, 50, 50, 50);
 
+		tytul = new JLabel("SPACE SHOOTER");
+		tytul.setFont(new Font("Monospaced", Font.BOLD, 150));
+		tytul.setForeground(Color.WHITE);
+		c.gridx = 1;
+		c.gridy = 0;
+		tlo.add(tytul, c);
+		
 		Graj = new JButton("  Graj  ");
 		Graj.setFont(new Font("Monospaced", Font.BOLD, 60));
 		c.gridx = 1;
-		c.gridy = 0;
+		c.gridy = 1;
 		tlo.add(Graj, c);
 
 		Ustawienia = new JButton("  Ustawienia  ");
 		Ustawienia.setFont(new Font("Monospaced", Font.BOLD, 60));
 		c.gridx = 1;
-		c.gridy = 1;
+		c.gridy = 2;
 		tlo.add(Ustawienia, c);
 
 		Wyjdz = new JButton("  Wyjdü  ");
@@ -57,7 +66,7 @@ public class Interfejs extends JFrame {
 		});
 
 		c.gridx = 1;
-		c.gridy = 2;
+		c.gridy = 3;
 		tlo.add(Wyjdz, c);
 
 	}
