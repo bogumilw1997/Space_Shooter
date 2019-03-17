@@ -2,5 +2,6 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="Space_Shooter/src"/>
+	<classpathentry kind="src" path="source"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
