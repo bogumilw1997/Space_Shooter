@@ -10,6 +10,7 @@ public class Ustawienia extends JFrame {
     Przycisk Cofnij;
     Przycisk Sterowanie;
     Przycisk Muzyka;
+    Przycisk Rozdzielczosc;
     JLabel tlo;
     JLabel tytul;
 
@@ -53,13 +54,21 @@ public class Ustawienia extends JFrame {
         c1.insets = new Insets(0, 0, 20, 0);
         c1.anchor = GridBagConstraints.LINE_START;
         tlo.add(Muzyka, c1);
-
+       
         GridBagConstraints d1 = new GridBagConstraints();
-        Cofnij = new Przycisk("  Cofnij  ");
+        Rozdzielczosc = new Przycisk("  Rozdzielczoœæ  ");
         d1.gridx = 0;
         d1.gridy = 4;
-        d1.insets = new Insets(0, 0, 400, 0);
+        d1.insets = new Insets(0, 0, 20, 0);
         d1.anchor = GridBagConstraints.LINE_START;
-        tlo.add(Cofnij, d1);
+        tlo.add(Rozdzielczosc, d1);
+        
+        GridBagConstraints f1 = new GridBagConstraints();
+        Cofnij = new Przycisk("  Cofnij  ");
+        f1.gridx = 0;
+        f1.gridy = 5;
+        f1.insets = new Insets(0, 0, 300, 0);
+        f1.anchor = GridBagConstraints.LINE_START;
+        tlo.add(Cofnij, f1);
     }
 }
