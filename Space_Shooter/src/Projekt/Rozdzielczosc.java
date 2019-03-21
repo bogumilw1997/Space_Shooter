@@ -30,41 +30,39 @@ public class Rozdzielczosc extends JFrame {
         tlo.setLayout(layout);
         this.add(tlo);
         
-        GridBagConstraints a1 = new GridBagConstraints();
-        a1.insets = new Insets(0, 0, 200, 0);
-        a1.anchor = GridBagConstraints.LINE_START;
-        a1.weightx = 1;
-        a1.weighty = 0;
+        GridBagConstraints a = new GridBagConstraints();
+        a.insets = new Insets(0, 0, 200, 0);
+        a.anchor = GridBagConstraints.LINE_START;
+        a.weightx = 1;
+        a.weighty = 0;
 
         tytul = new JLabel("SPACE SHOOTER");
         tytul.setFont(new Font("Monospaced", Font.ITALIC, 150));
         tytul.setForeground(Color.WHITE);
-        a1.gridx = 0;
-        a1.gridy =1;
-        tlo.add(tytul, a1);
-        GridBagConstraints b1 = new GridBagConstraints();
+        a.gridx = 0;
+        a.gridy =1;
+        tlo.add(tytul, a);
        
         p720 = new Przycisk("  1280×720  ");
-        b1.gridx = 0;
-        b1.gridy = 2;
-        b1.insets = new Insets(0, 0, 20, 0);
-        b1.anchor = GridBagConstraints.LINE_START;
-        tlo.add(p720, b1);
+        a.gridx = 0;
+        a.gridy = 2;
+        a.insets = new Insets(0, 0, 20, 0);
+        a.anchor = GridBagConstraints.LINE_START;
+        tlo.add(p720, a);
         
         p1080 = new Przycisk("  1920×1080  ");
-        b1.gridx = 0;
-        b1.gridy = 3;
-        b1.insets = new Insets(0, 0, 20, 0);
-        b1.anchor = GridBagConstraints.LINE_START;
-        tlo.add(p1080, b1);
+        a.gridx = 0;
+        a.gridy = 3;
+        a.insets = new Insets(0, 0, 20, 0);
+        a.anchor = GridBagConstraints.LINE_START;
+        tlo.add(p1080, a);
        
-        GridBagConstraints f1 = new GridBagConstraints();
         Cofnij = new Przycisk("  Cofnij  ");
-        f1.gridx = 0;
-        f1.gridy = 4;
-        f1.insets = new Insets(0, 0, 300, 0);
-        f1.anchor = GridBagConstraints.LINE_START;
-        tlo.add(Cofnij, f1);
+        a.gridx = 0;
+        a.gridy = 4;
+        a.insets = new Insets(0, 0, 300, 0);
+        a.anchor = GridBagConstraints.LINE_START;
+        tlo.add(Cofnij, a);
         
 	}
 }

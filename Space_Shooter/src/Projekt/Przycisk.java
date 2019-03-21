@@ -16,7 +16,6 @@ public class Przycisk extends JButton {
 		super(arg0);
 		this.setFont(new Font("Monospaced", Font.ITALIC, 60));
 		this.setForeground(Color.WHITE);
-		//this.setBorder(new LineBorder(Color.white, 3, true));
 		this.setBackground(Color.BLUE);
 		this.setOpaque(true);
 		this.setContentAreaFilled(true);

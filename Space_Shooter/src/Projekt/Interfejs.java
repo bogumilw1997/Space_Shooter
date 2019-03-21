@@ -52,23 +52,20 @@ public class Interfejs extends JFrame {
 		a.gridy =1;
 		tlo.add(tytul, a);
 
-		GridBagConstraints b = new GridBagConstraints();
 		Graj = new Przycisk("  Graj  ");
-		b.gridx = 0;
-		b.gridy = 2;
-		b.insets = new Insets(0, 0, 20, 0);
-		b.anchor = GridBagConstraints.LINE_START;
-		tlo.add(Graj, b);
+		a.gridx = 0;
+		a.gridy = 2;
+		a.insets = new Insets(0, 0, 20, 0);
+		a.anchor = GridBagConstraints.LINE_START;
+		tlo.add(Graj, a);
 
-		GridBagConstraints c = new GridBagConstraints();
 		Ust = new Przycisk("  Ustawienia  ");
-		c.gridx = 0;
-		c.gridy = 3;
-		c.insets = new Insets(0, 0, 20, 0);
-		c.anchor = GridBagConstraints.LINE_START;
-		tlo.add(Ust, c);
+		a.gridx = 0;
+		a.gridy = 3;
+		a.insets = new Insets(0, 0, 20, 0);
+		a.anchor = GridBagConstraints.LINE_START;
+		tlo.add(Ust, a);
 
-		GridBagConstraints d = new GridBagConstraints();
 		Wyjdz = new Przycisk("  Wyjdü  ");
 		Wyjdz.addActionListener(new ActionListener() {
 			@Override
@@ -77,11 +74,11 @@ public class Interfejs extends JFrame {
 			}
 		});
 
-		d.gridx = 0;
-		d.gridy = 4;
-		d.insets = new Insets(0, 0, 400, 0);
-		d.anchor = GridBagConstraints.LINE_START;
-		tlo.add(Wyjdz, d);
+		a.gridx = 0;
+		a.gridy = 4;
+		a.insets = new Insets(0, 0, 400, 0);
+		a.anchor = GridBagConstraints.LINE_START;
+		tlo.add(Wyjdz, a);
 	}
 
 }
