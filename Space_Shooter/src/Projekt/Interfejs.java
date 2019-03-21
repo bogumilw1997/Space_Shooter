@@ -32,7 +32,7 @@ public class Interfejs extends JFrame implements ActionListener{
 		this.setSize(1920, 1080);
 		this.setUndecorated(true);
 		this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-		ImageIcon img = new ImageIcon("Images\\background.jpg");
+		ImageIcon img = new ImageIcon("source\\background.jpg");
 		tlo = new JLabel("", img, JLabel.CENTER);
 		tlo.setBounds(0, 0, 1920, 1080);
 		GridBagLayout layout = new GridBagLayout();
