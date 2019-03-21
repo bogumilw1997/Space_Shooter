@@ -36,7 +36,7 @@ public class Przycisk extends JButton {
 	}
 
 }
-/**
+/***
  this.setOpaque(true);
  this.setContentAreaFilled(true);
  this.setBorderPainted(true);
