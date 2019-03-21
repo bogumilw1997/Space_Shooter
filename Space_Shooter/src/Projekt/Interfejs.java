@@ -67,13 +67,6 @@ public class Interfejs extends JFrame {
 		c.insets = new Insets(0, 0, 20, 0);
 		c.anchor = GridBagConstraints.LINE_START;
 		tlo.add(Ust, c);
-		Ust.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent arg0) {
-				Ustawienia ustawienia = new Ustawienia();
-				ustawienia.setVisible(true);
-			}
-		});
 
 		GridBagConstraints d = new GridBagConstraints();
 		Wyjdz = new Przycisk("  Wyjdü  ");

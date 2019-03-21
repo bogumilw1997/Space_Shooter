@@ -61,12 +61,5 @@ public class Ustawienia extends JFrame {
         d1.insets = new Insets(0, 0, 400, 0);
         d1.anchor = GridBagConstraints.LINE_START;
         tlo.add(Cofnij, d1);
-        Cofnij.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent arg0) {
-                Interfejs interfejs = new Interfejs();
-                interfejs.setVisible(true);
-            }
-        });
     }
 }

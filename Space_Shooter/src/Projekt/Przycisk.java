@@ -34,7 +34,6 @@ public class Przycisk extends JButton {
 			}
 		});
 	}
-
 }
 /***
  this.setOpaque(true);
