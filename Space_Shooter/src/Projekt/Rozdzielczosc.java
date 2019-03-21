@@ -31,7 +31,7 @@ public class Rozdzielczosc extends JFrame {
         this.add(tlo);
         
         GridBagConstraints a = new GridBagConstraints();
-        a.insets = new Insets(0, 0, 200, 0);
+        a.insets = new Insets(0, 0, 208, 0);
         a.anchor = GridBagConstraints.LINE_START;
         a.weightx = 1;
         a.weighty = 0;
