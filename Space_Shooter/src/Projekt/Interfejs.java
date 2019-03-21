@@ -29,7 +29,7 @@ public class Interfejs extends JFrame {
 	
 	public Interfejs() throws HeadlessException {
 
-		this.setExtendedState(JFrame.MAXIMIZED_BOTH); 
+		this.setExtendedState(JFrame.MAXIMIZED_BOTH);
 		this.setUndecorated(true);
 		this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 		ImageIcon img = new ImageIcon("source\\background.jpg");

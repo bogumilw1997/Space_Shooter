@@ -50,6 +50,15 @@ public class Main {
 	        }
 	    });
 		
+		rozd.p768.addActionListener(new ActionListener() {
+			 @Override
+	         public void actionPerformed(ActionEvent arg0) {
+	            interf.setSize(1366, 768);
+	            ustaw.setSize(1366, 768);
+	            rozd.setSize(1366, 768);
+	        }
+	    });
+		
 		rozd.p1080.addActionListener(new ActionListener() {
 			 @Override
 	         public void actionPerformed(ActionEvent arg0) {
