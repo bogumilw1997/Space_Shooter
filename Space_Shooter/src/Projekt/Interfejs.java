@@ -19,7 +19,7 @@ import javax.swing.border.LineBorder;
 
 import Projekt.Przycisk;
 
-public class Interfejs extends JFrame {
+public class Interfejs extends JFrame implements ActionListener{
 
 	Przycisk Graj;
 	Przycisk Ustawienia;
@@ -32,32 +32,50 @@ public class Interfejs extends JFrame {
 		this.setSize(1920, 1080);
 		this.setUndecorated(true);
 		this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-		ImageIcon img = new ImageIcon("source\\tlo.jpg");
+		ImageIcon img = new ImageIcon("Images\\background.jpg");
 		tlo = new JLabel("", img, JLabel.CENTER);
 		tlo.setBounds(0, 0, 1920, 1080);
 		GridBagLayout layout = new GridBagLayout();
-		GridBagConstraints c = new GridBagConstraints();
 		tlo.setLayout(layout);
 		this.add(tlo);
-		c.insets = new Insets(50, 50, 50, 50);
-		
+
+		GridBagConstraints a = new GridBagConstraints();
+		a.insets = new Insets(0, 0, 200, 0);
+		a.anchor = GridBagConstraints.LINE_START;
+		a.weightx = 1;
+		a.weighty = 0;
+
 		tytul = new JLabel("SPACE SHOOTER");
-		tytul.setFont(new Font("Monospaced", Font.BOLD, 150));
+		tytul.setFont(new Font("Monospaced", Font.ITALIC, 150));
 		tytul.setForeground(Color.WHITE);
-		c.gridx = 1;
-		c.gridy = 0;
-		tlo.add(tytul, c);
-	
+		a.gridx = 0;
+		a.gridy =1;
+		tlo.add(tytul, a);
+
+		GridBagConstraints b = new GridBagConstraints();
 		Graj = new Przycisk("  Graj  ");
-		c.gridx = 1;
-		c.gridy = 1;
-		tlo.add(Graj, c);
+		b.gridx = 0;
+		b.gridy = 2;
+		b.insets = new Insets(0, 0, 20, 0);
+		b.anchor = GridBagConstraints.LINE_START;
+		tlo.add(Graj, b);
 
+		GridBagConstraints c = new GridBagConstraints();
 		Ustawienia = new Przycisk("  Ustawienia  ");
-		c.gridx = 1;
-		c.gridy = 2;
+		c.gridx = 0;
+		c.gridy = 3;
+		c.insets = new Insets(0, 0, 20, 0);
+		c.anchor = GridBagConstraints.LINE_START;
 		tlo.add(Ustawienia, c);
+		Ustawienia.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				Ustawienia ustawienia = new Ustawienia();
+				ustawienia.setVisible(true);
+			}
+		});
 
+		GridBagConstraints d = new GridBagConstraints();
 		Wyjdz = new Przycisk("  Wyjdü  ");
 		Wyjdz.addActionListener(new ActionListener() {
 			@Override
@@ -65,10 +83,16 @@ public class Interfejs extends JFrame {
 				System.exit(0);
 			}
 		});
-		
-		c.gridx = 1;
-		c.gridy = 3;
-		tlo.add(Wyjdz, c);
+
+		d.gridx = 0;
+		d.gridy = 4;
+		d.insets = new Insets(0, 0, 400, 0);
+		d.anchor = GridBagConstraints.LINE_START;
+		tlo.add(Wyjdz, d);
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
 	}
 
 	public static void main(String[] args) {

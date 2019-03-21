@@ -14,20 +14,31 @@ public class Przycisk extends JButton {
 
 	public Przycisk(String arg0) {
 		super(arg0);
-		this.setFont(new Font("Monospaced", Font.BOLD, 60));
-		this.setForeground(Color.BLACK);
-        this.setBorder(new LineBorder(Color.black, 3, true));
-        this.setBackground(Color.YELLOW);
-        
-        this.addMouseListener(new MouseAdapter() {
-        	public void mouseEntered(MouseEvent e) {
-        		setBackground(Color.RED);
-        	}
+		this.setFont(new Font("Monospaced", Font.ITALIC, 60));
+		this.setForeground(Color.WHITE);
+		//this.setBorder(new LineBorder(Color.white, 3, true));
+		this.setBackground(Color.BLUE);
+		this.setOpaque(true);
+		this.setContentAreaFilled(true);
+		this.setBorderPainted(false);
+		this.setFocusable(false);
 
-        	public void mouseExited(MouseEvent e) {
-        		setBackground(Color.YELLOW);
-        	}	
-        });
+		this.addMouseListener(new MouseAdapter() {
+			public void mouseEntered(MouseEvent e) {
+				setBackground(Color.WHITE);
+				setForeground(Color.BLUE);
+			}
+			public void mouseExited(MouseEvent e) {
+				setBackground(Color.BLUE);
+				setForeground(Color.WHITE);
+			}
+		});
 	}
 
 }
+/**
+ this.setOpaque(true);
+ this.setContentAreaFilled(true);
+ this.setBorderPainted(true);
+ this.setFocusable(true);
+ **/
