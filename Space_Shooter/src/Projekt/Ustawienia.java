@@ -36,35 +36,28 @@ public class Ustawienia extends JFrame {
         tytul.setFont(new Font("Monospaced", Font.ITALIC, 150));
         tytul.setForeground(Color.WHITE);
         a.gridx = 0;
-        a.gridy =1;
+        a.gridy = 0;
         tlo.add(tytul, a);
 
         Sterowanie = new Przycisk("  Sterowanie  ");
         a.gridx = 0;
         a.gridy = 2;
         a.insets = new Insets(0, 0, 20, 0);
-        a.anchor = GridBagConstraints.LINE_START;
         tlo.add(Sterowanie, a);
 
         Muzyka = new Przycisk("  Muzyka  ");
         a.gridx = 0;
         a.gridy = 3;
-        a.insets = new Insets(0, 0, 20, 0);
-        a.anchor = GridBagConstraints.LINE_START;
         tlo.add(Muzyka, a);
        
         Rozdzielczosc = new Przycisk("  Rozdzielczoœæ  ");
         a.gridx = 0;
         a.gridy = 4;
-        a.insets = new Insets(0, 0, 20, 0);
-        a.anchor = GridBagConstraints.LINE_START;
         tlo.add(Rozdzielczosc, a);
         
         Cofnij = new Przycisk("  Cofnij  ");
         a.gridx = 0;
         a.gridy = 5;
-        a.insets = new Insets(0, 0, 300, 0);
-        a.anchor = GridBagConstraints.LINE_START;
         tlo.add(Cofnij, a);
     }
 }

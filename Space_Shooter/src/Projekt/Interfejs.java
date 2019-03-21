@@ -49,21 +49,18 @@ public class Interfejs extends JFrame {
 		tytul.setFont(new Font("Monospaced", Font.ITALIC, 150));
 		tytul.setForeground(Color.WHITE);
 		a.gridx = 0;
-		a.gridy =1;
+		a.gridy = 0;
 		tlo.add(tytul, a);
 
 		Graj = new Przycisk("  Graj  ");
 		a.gridx = 0;
 		a.gridy = 2;
 		a.insets = new Insets(0, 0, 20, 0);
-		a.anchor = GridBagConstraints.LINE_START;
 		tlo.add(Graj, a);
 
 		Ust = new Przycisk("  Ustawienia  ");
 		a.gridx = 0;
 		a.gridy = 3;
-		a.insets = new Insets(0, 0, 20, 0);
-		a.anchor = GridBagConstraints.LINE_START;
 		tlo.add(Ust, a);
 
 		Wyjdz = new Przycisk("  Wyjdü  ");
@@ -76,8 +73,6 @@ public class Interfejs extends JFrame {
 
 		a.gridx = 0;
 		a.gridy = 4;
-		a.insets = new Insets(0, 0, 400, 0);
-		a.anchor = GridBagConstraints.LINE_START;
 		tlo.add(Wyjdz, a);
 	}
 
