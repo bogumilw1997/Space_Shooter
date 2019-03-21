@@ -45,11 +45,8 @@ public class Main {
 			 @Override
 	         public void actionPerformed(ActionEvent arg0) {
 	            interf.setSize(1280, 720);
-	            interf.repaint();
 	            ustaw.setSize(1280, 720);
-	            ustaw.repaint();
 	            rozd.setSize(1280, 720);
-	            rozd.repaint();
 	        }
 	    });
 		
@@ -57,11 +54,8 @@ public class Main {
 			 @Override
 	         public void actionPerformed(ActionEvent arg0) {
 	            interf.setSize(1920, 1080);
-	            interf.repaint();
 	            ustaw.setSize(1920, 1080);
-	            ustaw.repaint();
 	            rozd.setSize(1920, 1080);
-	            rozd.repaint();
 	        }
 	    });
 	}
