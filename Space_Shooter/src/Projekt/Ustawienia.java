@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Ustawienia extends JFrame implements ActionListener {
+public class Ustawienia extends JFrame {
 
     Przycisk Cofnij;
     Przycisk Sterowanie;
@@ -68,15 +68,5 @@ public class Ustawienia extends JFrame implements ActionListener {
                 interfejs.setVisible(true);
             }
         });
-    }
-
-    @Override
-    public void actionPerformed(ActionEvent e) {
-    }
-
-
-    public static void main(String[] args) {
-        Interfejs frame = new Interfejs();
-        frame.setVisible(true);
     }
 }

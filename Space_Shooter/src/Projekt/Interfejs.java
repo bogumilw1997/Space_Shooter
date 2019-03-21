@@ -19,10 +19,10 @@ import javax.swing.border.LineBorder;
 
 import Projekt.Przycisk;
 
-public class Interfejs extends JFrame implements ActionListener{
+public class Interfejs extends JFrame {
 
 	Przycisk Graj;
-	Przycisk Ustawienia;
+	Przycisk Ust;
 	Przycisk Wyjdz;
 	JLabel tlo;
 	JLabel tytul;
@@ -61,13 +61,13 @@ public class Interfejs extends JFrame implements ActionListener{
 		tlo.add(Graj, b);
 
 		GridBagConstraints c = new GridBagConstraints();
-		Ustawienia = new Przycisk("  Ustawienia  ");
+		Ust = new Przycisk("  Ustawienia  ");
 		c.gridx = 0;
 		c.gridy = 3;
 		c.insets = new Insets(0, 0, 20, 0);
 		c.anchor = GridBagConstraints.LINE_START;
-		tlo.add(Ustawienia, c);
-		Ustawienia.addActionListener(new ActionListener() {
+		tlo.add(Ust, c);
+		Ust.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				Ustawienia ustawienia = new Ustawienia();
@@ -89,15 +89,6 @@ public class Interfejs extends JFrame implements ActionListener{
 		d.insets = new Insets(0, 0, 400, 0);
 		d.anchor = GridBagConstraints.LINE_START;
 		tlo.add(Wyjdz, d);
-	}
-
-	@Override
-	public void actionPerformed(ActionEvent e) {
-	}
-
-	public static void main(String[] args) {
-		Interfejs frame = new Interfejs();
-		frame.setVisible(true);
 	}
 
 }
